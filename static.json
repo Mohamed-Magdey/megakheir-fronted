@@ -1,0 +1,11 @@
+{
+  "root": "build/",
+  "routes": {
+    "/**": "index.html"
+  },
+  "proxies": {
+    "/ngos": {
+      "origin": "http://62.68.253.183:8000/ngos"
+    }
+  }
+}

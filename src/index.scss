@@ -186,8 +186,17 @@ footer {
 @media screen and (max-width: 900px) {
   main {
     li {
-      transform: scale(.7);
       width: 28%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    li {
+      transform: scale(.9);
+      width: 30%;
+      margin-left: 15px;
     }
   }
 }

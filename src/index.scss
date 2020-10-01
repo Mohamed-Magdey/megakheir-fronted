@@ -200,3 +200,20 @@ footer {
     }
   }
 }
+
+@media screen and (max-width: 420px) {
+  main {
+    li {
+      transform: scale(1);
+      width: 46%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    li {
+      margin-left: 10px;
+    }
+  }
+}

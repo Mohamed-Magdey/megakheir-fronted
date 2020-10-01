@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {fetchData} from '../store/actionCreators';
 import {connect} from 'react-redux';
+import pic from '../images/005 1.png';
 
 
 class Main extends Component {
@@ -13,7 +14,7 @@ class Main extends Component {
         let dataList = data === undefined ? '...loading'
             : data.map(val => (
                 <li key={val.pkID}>
-                    <div><img src={val.Logo} alt={val.Name} /></div>
+                    <div><img src={val.Logo || pic} alt={val.Name} /></div>
                     <h1>{val.Name}</h1>
                     <button>تبرع الآن</button>
                 </li>
